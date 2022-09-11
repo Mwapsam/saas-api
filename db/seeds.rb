@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Category.create(name: "Trap", decription: "Trap music")
+Category.create(name: "Slows", decription: "Slow music")
+Category.create(name: "Afro beat", decription: "African music")
+Category.create(name: "Gospel", decription: "Christian music")
+Category.create(name: "Country", decription: "Country music")
+
+Track.create(name: "God did", artist: "DJ Khalid", year: "2022", public: true, category_id: 1)
+Track.create(name: "Throne room", artist: "kim Walker", year: "2012", public: true, category_id: 4)
+Track.create(name: "Coming back to you", artist: "Celine Dion", year: "2005", public: true, category_id: 2)
+Track.create(name: "Kumwesu", artist: "Chef 187", year: "2016", public: false, category_id: 3)
+Track.create(name: "Coward of the country", artist: "Don Williams", year: "1991", public: true, category_id: 5)
