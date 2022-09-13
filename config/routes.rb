@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       end
       resources :tracks, only: [:index, :create, :update, :destroy] do
         get :image, on: :member
+        get :audio, on: :member
       end
     end
   end
